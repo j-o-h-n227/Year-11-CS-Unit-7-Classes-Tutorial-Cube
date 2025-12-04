@@ -1,5 +1,9 @@
 public class Cube {
     private int side;
+    public static void main(String[] args) {
+        Cube c = new Cube(4);
+        System.out.println(c);
+    }
 
     public Cube() {
         this.side = 1;
@@ -16,11 +20,11 @@ public class Cube {
         }
     }
 
-    public double calculateVolume() {
+    public int calculateVolume() {
         return side * side * side;
     }
 
-    public double calculateSurfaceArea() {
+    public int calculateSurfaceArea() {
         return side * side * 6;
     }
 
